@@ -261,6 +261,10 @@ footer {
     margin-bottom: 0.75rem;
 }
 
+#footer_contacts img{
+    margin-left: 32px;
+}
+
 #footer_social_media{
     display: flex;
     gap: 2rem;
