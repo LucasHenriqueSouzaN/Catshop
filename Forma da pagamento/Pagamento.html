@@ -3,54 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
     <title>Forma de pagamento</title>
 
     <link rel="stylesheet" href="Pagamento.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script async src="./js.js"></script>
+
+
 </head>
 <body>
-    <!--Barra de navegação-->
-    <nav>
-        <div class="container">
-            <figure class="logo"><a href="../index.html"><img src="cat shop logo.png"></a></figure>
-                <div class="search-bar">
-                <i class="uil uil-search"></i>
-                <input type="search" placeholder="search">
-            </div>
-    
+    <!--HEADER-->
+    <header>
+        <a href="../Inicial/index.html" class="logo">
+            <img src="../Imagens/cat shop logo.png">
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <ul class="navbar">
+            <li><a href="../Inicial/index.html">Início</a></li>
+            <li><a href="#">Castração</a></li>
+            <li><a href="#">Adoção</a></li>
+            <li><a href="#">Banho</a></li>
+            <li><a href="#">Veterinário</a></li>
+        </ul>
 
-            <div class="button">
-                <p class="link">Login</p>
-                <button class="btn">SignUp</button>
-            </div>
+
+        <div class="header-icon">
+            <a href="../Inicial/Carrinho.html"><i class="bx bx-shopping-bag" id="cart-shop"></i></a>
+            <a href="#"><i class="bx bx-search" id="search-icon"></i></a>
+            <a href="#"><i class="bx bx-user" id="user-icon"></i></a>
         </div>
 
-        <ul id="ul-principal">
-            <li class="li-p">
-                <a href="javascript://" class="bt1">
-                    banho
-                </a>
-            </li>
-            <li class="li-p"> 
-                <a href="javascript://" class="bt2">
-                    castração
-                </a>
-            </li>   
-            <li class="li-p">
-                <a href="javascript://" class="bt4">
-                    veterinario
-                </a>
-            </li>
-            <li class="li-p">
-                <a href="#" class="bt5">
-                adoção
-                </a>
-            </li>
-    </nav>
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
 
+    <script src="../Inicial/header.js"></script>
+
+
+    <!--CARRINHO-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close"></i>
+
+        <h2 class="cart__title-center">Meu Carrinho</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="../Imagens/potinho rosinha.jpg" alt="Pote Rosa" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart_title">Pote de água</h3>
+                    <span class="cart__price">R$15</span>
+                </div>
+
+                <div class="cart__amount">
+                    <div class="cart__amount-content">
+                        <span class="cart__amount-box">
+                            <i class="bx bx-minus"></i>
+                        </span>
+
+                        <span class="cart__amount-number">1</span>
+
+                        <span class="cart__amount-box">
+                            <i class="bx bx-plus"></i>
+                        </span>
+                    </div>
+
+                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                </div>
+            </article>
+
+    </div>
+    </header>
+
+
+    <!-- About -->
     <section class="about">
         <div class="content">
             <div class="text">
@@ -62,7 +95,7 @@
                 <p>- Boletos: possuem validade de 1 dia. Se o vencimento for sábado, domingo ou feriado, poderá ser pago no primeiro dia útil. 
                     O pagamento não será aceito após a data de vencimento. Se ainda quiser o pedido entre em contato com o e-mail atendimento.catshop@gmail.com, ou em nosso Whatsapp (41) 98563-4521 e podemos gerar outro boleto pra você!</p>
                 <p>Sejam muito bem-vindos e boas compras!</p>
-                <p><img src="Pagemento.jpeg"></p>
+                <p><img src="../Imagens/Pagemento.jpeg"></p>
             </div>
         </div>
     </section>
@@ -72,7 +105,7 @@
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <a href="../index.html"><img src="cat shop logo.png" alt="Logo Catshop"></a>
+                <a href="../Inicial/index.html"><img src="../Imagens/cat shop logo.png" alt="Logo Catshop"></a>
                 <p>Tudo para seu Miaumigo</p>
 
                 <div id="footer_social_media">
@@ -82,8 +115,8 @@
                 </div>
 
                 <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="x-twitter">
-                        <i class="fa-brands fa-x-twitter"></i>
+                    <a href="#" class="footer-link" id="bluesky">
+                        <i class="fa-brands fa-bluesky"></i>
                     </a>
                 </div>
             </div>
@@ -93,13 +126,13 @@
                     <h3>INSTITUCIONAL</h3>
                 </li>
                 <li>
-                    <a href="file:///media/guest-cfows4/76E8-CACF/tcc/index/P%C3%A1gina%20Quem%20somos/index.html" class="footer-link">Quem somos</a>
+                    <a href="../Página Quem somos/Quem somos.html" class="footer-link">Quem somos</a>
                 </li>
                 <li>
-                    <a href="file:///media/guest-cfows4/76E8-CACF/tcc/index/Forma%20da%20pagamento/index.html" class="footer-link">Forma de pagamento</a>
+                    <a href="../Forma da pagamento/Pagamento.html" class="footer-link">Forma de pagamento</a>
                 </li>
                 <li>
-                    <a href="file:///media/guest-cfows4/76E8-CACF/tcc/index/Devolu%C3%A7%C3%A3o%20e%20reembolso/index.html" class="footer-link">Política de devolução e reembolso</a>
+                    <a href="../Devolução e reembolso/DeR.html" class="footer-link">Política de devolução e reembolso</a>
                 </li>
             </ul>
 
@@ -112,6 +145,18 @@
                 </li>
                 <li>
                     <a href="#" class="footer-link">atendimento.catshop@gmail.com</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>LOCALIZAÇÃO</h3>
+                </li>
+                <li>
+                    <p>Catshop Online Ltda ME</p>
+                    <p>Rua Alameda Cel. Elizio Pereira</p>
+                    <p>83206-000</p>
+                    <p>Paranaguá-PR</p>
                 </li>
             </ul>
 
