@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <title>CatShop</title>
+
+    <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./adocao.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script async src="./js.js"></script>
+
+
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="../Imagens/cat shop logo.png">
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <ul class="navbar">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="#">Castração</a></li>
+            <li><a href="#">Adoção</a></li>
+            <li><a href="#">Banho</a></li>
+            <li><a href="#">Veterinário</a></li>
+        </ul>
+
+
+        <div class="header-icon">
+            <a href="#"><i class="bx bx-shopping-bag" id="cart-shop"></i></a>
+            <a href="#"><i class="bx bx-search" id="search-icon"></i></a>
+            <a href="../Inicial/cad.html"><i class="bx bx-user" id="user-icon"></i></a>
+        </div>
+
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+
+        <script src="./header.js"></script>
+
+        <!--CARRINHO-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close"></i>
+
+        <h2 class="cart__title-center">Meu Carrinho</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="../Imagens/potinho rosinha.jpg" alt="Pote Rosa" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart_title">Pote de água</h3>
+                    <span class="cart__price">R$15</span>
+                </div>
+
+                <div class="cart__amount">
+                    <div class="cart__amount-content">
+                        <span class="cart__amount-box">
+                            <i class="bx bx-minus"></i>
+                        </span>
+
+                        <span class="cart__amount-number">1</span>
+
+                        <span class="cart__amount-box">
+                            <i class="bx bx-plus"></i>
+                        </span>
+                    </div>
+
+                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                </div>
+            </article>
+    </header>
+
+    <!--animais-->
+
+    <section id="Adoção">
+        <h2 class="section-title">Deseja adotar um novo companheiro?</h2>
+        <h3 class="section-subtitle">veja alguns dos nossos gatinhos.</h3>
+
+        <div id="cat">
+            <div class="cats">
+                <div class="dish-coração">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            <img src="../Imagens/gata1.jpg" class= "dish-image" alt="pote pequeno rosa">
+            <h3 class="dish-title">Pote de Água Rosa</h3>
+
+            <span class="dish-discription">Gata cinza adulta. 
+                A Familia se mudou para outra cidade e a deixou para adoção. Ela é carinhosa, ama colo e caixas. </span>
+
+            <div class="dish-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(50+)</span>
+            </div>
+
+            <div class="dish-price">
+                <h4>R$15,00</h4>
+                <button class="btn-default">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
