@@ -212,7 +212,7 @@ header .shadow{
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -224,9 +224,9 @@ header .shadow{
 
 .navegation {
     position: absolute;
-    left: 900px;
+    left: 700px;
     display: flex;
-    top: 80%;
+    top: 100%;
 }
 
 
