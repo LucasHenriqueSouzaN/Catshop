@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <title>CatShop</title>
+
+    <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./adocao.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script async src="./js.js"></script>
+
+
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../Imagens/cat shop logo.png">
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <ul class="navbar">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../Castração, veterinário e banho/Castração.html">Castração</a></li>
+            <li><a href="../Inicial/adocao.html">Adoção</a></li>
+            <li><a href="../Castração, veterinário e banho/banho.html">Banho</a></li>
+            <li><a href="../Castração, veterinário e banho/vet.html">Veterinário</a></li>
+        </ul>
+
+
+        <div class="header-icon">
+            <a href="#"><i class="bx bx-shopping-bag" id="cart-shop"></i></a>
+            <a href="#"><i class="bx bx-search" id="search-icon"></i></a>
+            <a href="../Inicial/cad.html"><i class="bx bx-user" id="user-icon"></i></a>
+        </div>
+
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+
+        <script src="./header.js"></script>
+
+        <!--CARRINHO-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close"></i>
+
+        <h2 class="cart__title-center">Meu Carrinho</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="../Imagens/potinho rosinha.jpg" alt="Pote Rosa" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart_title">Pote de água</h3>
+                    <span class="cart__price">R$15</span>
+                </div>
+
+                <div class="cart__amount">
+                    <div class="cart__amount-content">
+                        <span class="cart__amount-box">
+                            <i class="bx bx-minus"></i>
+                        </span>
+
+                        <span class="cart__amount-number">1</span>
+
+                        <span class="cart__amount-box">
+                            <i class="bx bx-plus"></i>
+                        </span>
+                    </div>
+
+                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                </div>
+            </article>
+    </header>
+
+    <div class="img">
+        <img src="../Imagens/Não compre, adote Seja doador Seja volundário.jpg">
+    </div>    
+
+    <!--About Us-->
+    <section class="about">
+        <div class="main">
+            <img src="../Imagens/gatocharminho.jpg">
+            <div class="about-text">
+                <h1>Sobre nós</h1>
+                <p>Quer saber mais sobre nosso site CatShop? Acesse o link:</p>
+                <button class="form-button form-button-light" id="open-register"><a href="../Página Quem somos/Quem somos.html">Saiba mais</a></button>
+            </div>
+        </div>     
+    </section>
+
+
+
+
+
+    <!--animais-->
+
+    <section id="Adoção">
+        <h2 class="section-title">Deseja adotar um novo companheiro?</h2>
+        <i class="section-subtitle"></i>
+
+        <div id="cat">
+            <div class="cats">
+            <img src="../Imagens/gata1.jpg" class= "dish-image" alt="phephezinha gata cinza">
+            <h3 class="dish-title">Phephezinha - 3 anos</h3>
+
+            <span class="dish-discription">Gata cinza adulta. 
+                A Familia se mudou para outra cidade e a deixou para adoção. Ela é carinhosa, ama colo e caixas. </span>
+
+            <div class="dish-price">
+                <h4>entre em contato: 41 99824-4378 </h4>
+            </div>
+        </div>
+        <div class="cats">
+            <img src="../Imagens/Victor.png" class= "dish-image" alt="Victor gato laranja">
+            <h3 class="dish-title">Victor - 6 meses</h3>
+
+            <span class="dish-discription">Gato laranja jovem. 
+                A gata da família teve filhotes, porém a família não condições de criar. Ele é carinho, pede colo o tempo todo e é bem carente. Gosta de bolas d e papel. </span>
+
+            <div class="dish-price">
+                <h4>entre em contato: 41 99824-4378 </h4>
+            </div>
+        </div>    
+
+        <div class="cats">
+            <img src="../Imagens/Leon.png" class= "dish-image" alt="Leon gato preto ">
+            <h3 class="dish-title">Leon - 2 anos</h3>
+    
+            <span class="dish-discription">Gato preto adulto. 
+                Infelizmente, foi abandonado pelos antigos donos. Leon é um gato adorável, muito carinhoso, ama carinhoso. Adora ficar na areia e se sujar. </span>
+    
+            <div class="dish-price">
+                <h4>entre em contato: 41 99824-4378 </h4>
+            </div>
+        </div>
+        
+        <div class="cats">
+            <img src="../Imagens/Johnny.png" class= "dish-image" alt="Gato tigrado">
+            <h3 class="dish-title">Johnny - 8 anos</h3>
+    
+            <span class="dish-discription">Gato adulto tigrado. 
+                Johnny foi encontrado  na rua. Um gato amável, um verdadeiro companheiro, ama deitar em cobertores e é bem falante. </span>
+    
+            <div class="dish-price">
+                <h4>entre em contato: 41 99824-4378 </h4>
+            </div>
+        </div>
+        </section>
+
+        <section id="Adoção">  
+            <div id="cat">
+                <div class="cats">
+                <img src="../Imagens/Paloma.png" class= "dish-image" alt="Paloma gata frajola">
+                <h3 class="dish-title">Paloma - 6 meses</h3>
+    
+                <span class="dish-discription">  . 
+                    Paloma foi encontrada na rua, próxima à um canal de esgoto. Uma gata arteira, ama carinho na cabeça. Adora dar modidinhas. Amassa muitos pãozinhos. </span>
+    
+                <div class="dish-price">
+                    <h4>entre em contato: 41 99824-4378 </h4>
+                </div>
+            </div>
+            <div class="cats">
+                <img src="../Imagens/July.png" class= "dish-image" alt="July gata branca">
+                <h3 class="dish-title">July - 8 anos</h3>
+    
+                <span class="dish-discription">Gata branca adulta. 
+                    July foi encontrada na rua com sinais de agreção. Parece arisca, mas é uma gata adorável, muito carinhosa. Ronrona bastante. Adora brincar. Ama carinhos nas costa e na calda.</span>
+    
+                <div class="dish-price">
+                    <h4>entre em contato: 41 99824-4378 </h4>
+                </div>
+            </div>    
+    
+            <div class="cats">
+                <img src="../Imagens/gato preto.png" class= "dish-image" alt="Cleiton gat preto">
+                <h3 class="dish-title">Cleiton - 3 anos</h3>
+        
+                <span class="dish-discription">Gato preto adulta. 
+                    Cleiton é um gato tímido, pouco sociável, foi encontrado na rua, mas quando pega confiança se torna o melhor amigo que alguém pode ter. </span>
+        
+                <div class="dish-price">
+                    <h4>entre em contato: 41 99824-4378 </h4>
+                </div>
+            </div>
+            
+            <div class="cats">
+                <img src="../Imagens/Dídí.png" class= "dish-image" alt="Dídí gato siamês">
+                <h3 class="dish-title">Dídí - 2 anos</h3>
+        
+                <span class="dish-discription">Gato siamês adulta. 
+                    Infelizmente Dídí foi abandonado por seu antigo tutor. É um gato extremamente carinhoso e falante, adora uns petiscos. </span>
+        
+                <div class="dish-price">
+                    <h4>entre em contato: 41 99824-4378 </h4>
+                </div>
+            </div>
+            </section>
+
+            <!--Footer-->
+        <main></main>
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <a href="../index.html"><img src="../Imagens/cat shop logo.png" alt="Logo Catshop"></a>
+                    <p>Tudo para seu Miaumigo</p>
+    
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/cathshop.pgua/" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+    
+                    <div id="footer_social_media">
+                        <a href="https://x.com/catshoppgua?t=HPYAbvkN7O8WhKtvEstCjg&s=09" class="footer-link" id="x-twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>INSTITUCIONAL</h3>
+                    </li>
+                    <li>
+                        <a href="../Página Quem somos/Quem somos.html" class="footer-link">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="../Forma da pagamento/Pagamento.html" class="footer-link">Forma de pagamento</a>
+                    </li>
+                    <li>
+                        <a href="../Devolução e reembolso/DeR.html" class="footer-link">Política de devolução e reembolso</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>ATENDIMENTO</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">(41) 98563-4521</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">atendimento.catshop@gmail.com</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>LOCALIZAÇÃO</h3>
+                    </li>
+                    <li>
+                        <p>Catshop Online Ltda ME</p>
+                        <p>Rua Alameda Cel. Elizio Pereira</p>
+                        <p>83206-000</p>
+                        <p>Paranaguá-PR</p>
+                    </li>
+                </ul>
+    
+    
+            </div>
+    
+            <div id="footer_copyright">
+                &#169
+                Criado por Aline, Lucas, Ayume e Hugo
+            </div>
+    
+        </footer>
+
+        
+           
+    
+
