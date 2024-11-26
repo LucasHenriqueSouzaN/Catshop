@@ -322,6 +322,7 @@ header .shadow{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
 }
 
 .about .content img{
@@ -375,7 +376,7 @@ header .shadow{
 footer {
     width: 100%;
     color: white;
-    margin-top: 50px;
+    margin-top: 300px;
 }
 
 .footer-link {

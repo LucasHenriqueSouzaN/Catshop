@@ -23,6 +23,7 @@ main {
     width: 768px;
     border-radius: 12px;
     box-shadow: 0 5px 20px #A0A0A0;
+    margin-top: 300px;
 }
 
 @media (max-width:768px){

@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./Inicial/Style.css">
+    <link rel="stylesheet" href="./Carrinho/carrinho.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script async src="./Inicial/js.js"></script>
     <script async src="./Inicial/pesq.js"></script>
 
 
@@ -36,51 +36,29 @@
 
 
         <div class="header-icon">
-            <a href="#"><i class="bx bx-shopping-bag" id="cart-shop"></i></a>
+            <i class="bx bx-shopping-bag" id="open-cart"></i>
             <a href="#"><i class="bx bx-search" id="search-icon"></i></a>
             <a href="./Inicial/cad.html"><i class="bx bx-user" id="user-icon"></i></a>
         </div>
 
         <div class="search-box">
-            <input type="search" name="" id="" placeholder="Search Here...">
+            <input type="search" name="" id="find" placeholder="Search Here...">
         </div>
 
         <script src="./Inicial/header.js"></script>
-
-        <!--CARRINHO-->
-    <div class="cart" id="cart">
-        <i class="bx bx-x cart__close"></i>
-
-        <h2 class="cart__title-center">Meu Carrinho</h2>
-
-        <div class="cart__container">
-            <article class="cart__card">
-                <div class="cart__box">
-                    <img src="./Imagens/potinho rosinha.jpg" alt="Pote Rosa" class="cart__img">
-                </div>
-
-                <div class="cart__details">
-                    <h3 class="cart_title">Pote de água</h3>
-                    <span class="cart__price">R$15</span>
-                </div>
-
-                <div class="cart__amount">
-                    <div class="cart__amount-content">
-                        <span class="cart__amount-box">
-                            <i class="bx bx-minus"></i>
-                        </span>
-
-                        <span class="cart__amount-number">1</span>
-
-                        <span class="cart__amount-box">
-                            <i class="bx bx-plus"></i>
-                        </span>
-                    </div>
-
-                    <i class="bx bx-trash-alt cart__amount-trash"></i>
-                </div>
-            </article>
+        
+        <!-- Carrinho de Compras -->
+        <div id="carrinho" class="carrinho hidden">
+            <h2>Carrinho de Compras</h2>
+            <div id="itens-carrinho"></div>
+            <div id="total-carrinho">
+                <h3>Total: <span id="total">R$0,00</span></h3>
+            </div>
+            <button id="finalizar-compra">Finalizar Compra</button>
+            <button id="fechar-carrinho">Fechar</button>
+        </div>
     </header>
+
 
 
     <!--SLIDER-->
@@ -421,6 +399,65 @@
 
 
 
-    
+        <script>
+            let carrinho = [];
+        
+            function adicionarAoCarrinho(titulo, preco) {
+                const item = {
+                    titulo: titulo,
+                    preco: parseFloat(preco.replace('R$', '').replace(',', '.'))
+                };
+                
+                carrinho.push(item);
+                atualizarCarrinho();
+            }
+        
+            function atualizarCarrinho() {
+                const itensCarrinho = document.getElementById('itens-carrinho');
+                itensCarrinho.innerHTML = '';
+                
+                let total = 0;
+        
+                carrinho.forEach((item, index) => {
+                    const divItem = document.createElement('div');
+                    divItem.innerHTML = `${item.titulo} - R$${item.preco.toFixed(2)} 
+                        <button onclick="removerDoCarrinho(${index})">Remover</button>`;
+                    itensCarrinho.appendChild(divItem);
+                    
+                    total += item.preco;
+                });
+        
+                document.getElementById('total').innerText = `R$${total.toFixed(2)}`;
+            }
+        
+            function removerDoCarrinho(index) {
+                carrinho.splice(index, 1);
+                atualizarCarrinho();
+            }
+        
+            document.querySelectorAll('.btn-default').forEach((botao) => {
+                botao.addEventListener('click', () => {
+                    const dish = botao.closest('.dish');
+                    const titulo = dish.querySelector('.dish-title').innerText;
+                    const preco = dish.querySelector('.dish-price h4').innerText;
+                    adicionarAoCarrinho(titulo, preco);
+                });
+            });
+        
+            document.getElementById('open-cart').addEventListener('click', () => {
+                document.getElementById('carrinho').classList.toggle('hidden');
+            });
+        
+            document.getElementById('fechar-carrinho').addEventListener('click', () => {
+                document.getElementById('carrinho').classList.add('hidden');
+            });
+        
+            document.getElementById('finalizar-compra').addEventListener('click', () => {
+                alert('Compra finalizada! Obrigado por comprar conosco.');
+                carrinho = [];
+                atualizarCarrinho();
+                document.getElementById('carrinho').classList.add('hidden');
+            });
+        </script>
 </body>
 </html>
