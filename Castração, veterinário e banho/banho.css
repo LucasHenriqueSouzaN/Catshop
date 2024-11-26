@@ -43,6 +43,7 @@
     letter-spacing: 2px;
 }
 
+
 .about-text p{
     color: pink;
     letter-spacing: 1px;
@@ -54,7 +55,6 @@
 main.cards{
     display: flex;
     padding: 32px;
-    margin-left: 300px;
 }
 
 main.cards section.card{
