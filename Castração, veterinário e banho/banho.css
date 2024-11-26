@@ -1,0 +1,110 @@
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    margin-top: 100px;
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+    border-radius: 50px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.about-text h1{
+    color: palevioletred;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.section-title{
+    margin-left: 350px;
+}
+
+.about-text h5{
+    color: pink;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+.about-text p{
+    color: pink;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+main.cards{
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card i{
+    width: 100%;
+}
+
+main.cards section.card.contact{
+    box-sizing: 20px 20px 60px -30px #08C4FF;
+}
+
+main.cards section.card.shop{
+    box-sizing: 20px 20px 60px -30px #AFD6FF;
+}
+
+main.cards section.card.check{
+    box-sizing: 20px 20px 60px -30px #FFC1D5;
+}
+
+main.cards section.card.pet{
+    box-sizing: 20px 20px 60px -30px #75ecb1;
+}
