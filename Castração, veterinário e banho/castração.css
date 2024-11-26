@@ -50,7 +50,7 @@
 main.cards{
     display: flex;
     padding: 32px;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 
 main.cards section.card{
