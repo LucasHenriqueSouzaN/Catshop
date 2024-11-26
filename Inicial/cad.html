@@ -11,91 +11,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./Style.css">
     <link rel="stylesheet" href="./cad.css">
-    <link rel="stylesheet" href="./cad.java">
-    <link rel="stylesheet" href="./cad.xml">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script async src="./js.js"></script>
     <script async src="./cad.js"></script>
-
-
 </head>
 <body>
 
-        <!--HEADER-->
-        <header>
-            <a href="../index.html" class="logo">
-                <img src="../Imagens/cat shop logo.png">
-            </a>
-            <i class="bx bx-menu" id="menu-icon"></i>
-            
-            <ul class="navbar">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../Castração, veterinário e banho/Castração.html">Castração</a></li>
-                <li><a href="../Inicial/adocao.html">Adoção</a></li>
-                <li><a href="../Castração, veterinário e banho/banho.html">Banho</a></li>
-                <li><a href="../Castração, veterinário e banho/vet.html">Veterinário</a></li>
-            </ul>
-    
-    
-            <div class="header-icon">
-                <a href="#"><i class="bx bx-shopping-bag" id="cart-shop"></i></a>
-                <a href="#"><i class="bx bx-search" id="search-icon"></i></a>
-                <a href="../Inicial/cad.html"><i class="bx bx-user" id="user-icon"></i></a>
-            </div>
-    
-            <div class="search-box">
-                <input type="search" name="" id="" placeholder="Search Here...">
-            </div>
-    
-            <script src="./header.js"></script>
-    
-            <!--CARRINHO-->
-        <div class="cart" id="cart">
-            <i class="bx bx-x cart__close"></i>
-    
-            <h2 class="cart__title-center">Meu Carrinho</h2>
-    
-            <div class="cart__container">
-                <article class="cart__card">
-                    <div class="cart__box">
-                        <img src="../Imagens/potinho rosinha.jpg" alt="Pote Rosa" class="cart__img">
-                    </div>
-    
-                    <div class="cart__details">
-                        <h3 class="cart_title">Pote de água</h3>
-                        <span class="cart__price">R$15</span>
-                    </div>
-    
-                    <div class="cart__amount">
-                        <div class="cart__amount-content">
-                            <span class="cart__amount-box">
-                                <i class="bx bx-minus"></i>
-                            </span>
-    
-                            <span class="cart__amount-number">1</span>
-    
-                            <span class="cart__amount-box">
-                                <i class="bx bx-plus"></i>
-                            </span>
-                        </div>
-    
-                        <i class="bx bx-trash-alt cart__amount-trash"></i>
-                    </div>
-                </article>
-        </header>
-    
+    <!--HEADER-->
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../Imagens/cat shop logo.png">
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-        <!--- cadastro --->
-        <main>
-            <div class="login-container" id="login-container">
-                <div class="form-container">
-                    <form class="form form-login">
-                        <h2 class="form-title">Entrar com</h2>
-                        <div class="form-social">
-                            <a href="https://x.com/catshoppgua?t=HPYAbvkN7O8WhKtvEstCjg&s=09" class="social-icon">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
+        <ul class="navbar">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../Castração, veterinário e banho/Castração.html">Castração</a></li>
+            <li><a href="../Inicial/adocao.html">Adoção</a></li>
+            <li><a href="../Castração, veterinário e banho/banho.html">Banho</a></li>
+            <li><a href="../Castração, veterinário e banho/vet.html">Veterinário</a></li>
+        </ul>
+
+        <div class="header-icon">
+            <a href="#"><i class="bx bx-shopping-bag" id="cart-shop"></i></a>
+            <a href="#"><i class="bx bx-search" id="search-icon"></i></a>
+            <a href="../Inicial/cad.html"><i class="bx bx-user" id="user-icon"></i></a>
+        </div>
+
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+
+        <script src="./header.js"></script>
+
+    </header>
+
+    <!--- cadastro --->
+    <main>
+        <div class="login-container" id="login-container">
+            <div class="form-container">
+                <form class="form form-login" id="loginForm">
+                    <h2 class="form-title">Entrar com</h2>
+                    <div class="form-social">
+                        <a href="https://x.com/catshoppgua?t=HPYAbvkN7O8WhKtvEstCjg&s=09" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
                             <a href="#" class="social-icon">
                                 <i class="fab fa-google"></i>
                             </a>
@@ -105,17 +65,17 @@
                         </div>
                         <p class="form-text">ou utilize sua conta</p>
                         <div class="form-input-container">
-                            <input type="email" class="form-input" placeholder="Email">
-                            <input type="password" class="form-input" placeholder="Senha">
+                            <input type="email" class="form-input" placeholder="Email" id="loginEmail">
+                            <input type="password" class="form-input" placeholder="Senha" id="senha"> <!-- Mudando para 'senha' para corresponder ao seu script -->
                         </div>
                         <a href="#" class="form-link">Esqueceu a senha?</a>
-                        <button type="button" class="form-button">Logar</button>
+                        <button type="button" class="form-button" id="loginButton" onclick="logar()">Logar</button> <!-- Chamada da função logar() -->
                         <p class="mobile-text">
                             Não tem conta?
                             <a href="#" id="open-register-mobile">Registre-se</a>
                         </p>
                     </form>
-                    <form class="form form-register">
+                    <form class="form form-register" id="registerForm">
                         <h2 class="form-title">Criar Conta</h2>
                         <div class="form-social">
                             <a href="https://x.com/catshoppgua?t=HPYAbvkN7O8WhKtvEstCjg&s=09" class="social-icon">
@@ -130,11 +90,11 @@
                         </div>
                         <p class="form-text">ou cadastre seu email</p>
                         <div class="form-input-container">
-                            <input type="text" class="form-input" placeholder="Nome">
-                            <input type="email" class="form-input" placeholder="Email">
-                            <input type="password" class="form-input" placeholder="Senha">
+                            <input type="text" class="form-input" placeholder="Nome" id="registerName">
+                            <input type="email" class="form-input" placeholder="Email" id="registerEmail">
+                            <input type="password" class="form-input" placeholder="Senha" id="registerPassword">
                         </div>
-                        <button type="button" class="form-button">Cadastrar</button>
+                        <button type="button" class="form-button" id="registerButton">Cadastrar</button>
                         <p class="mobile-text">
                             Já tem conta?
                             <a href="#" id="open-login-mobile">Login</a>
@@ -154,105 +114,72 @@
                     </div>
                 </div>
             </div>
+    
+            <!-- Seção para exibir as informações -->
+            <div id="infoDisplay" style="display: none; margin-top: 20px;">
+                <h3>Informações:</h3>
+                <p id="infoText"></p>
+            </div>
         </main>
-
-        <script>
-            const loginContainer = document.getElementById('login-container');
-        
-            const moveOverlay = () => loginContainer.classList.toggle('move');
-        
-            document.getElementById('open-register').addEventListener('click', moveOverlay);
-            document.getElementById('open-login').addEventListener('click', moveOverlay);
-            document.getElementById('open-register-mobile').addEventListener('click', moveOverlay);
-            document.getElementById('open-login-mobile').addEventListener('click', moveOverlay);
-        </script>
-
-        <!-- Formulário de Login -->
-<form class="form form-login" action="login" method="post">
-    <h2 class="form-title">Entrar com</h2>
-    <div class="form-input-container">
-        <input type="email" name="email" class="form-input" placeholder="Email" required>
-        <input type="password" name="password" class="form-input" placeholder="Senha" required>
-    </div>
-    <button type="submit" class="form-button">Logar</button>
-</form>
-
-<!-- Formulário de Registro -->
-<form class="form form-register" action="register" method="post">
-    <h2 class="form-title">Criar Conta</h2>
-    <div class="form-input-container">
-        <input type="text" name="name" class="form-input" placeholder="Nome" required>
-        <input type="email" name="email" class="form-input" placeholder="Email" required>
-        <input type="password
-
+    
         <!---footer-->
         <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <a href="../index.html"><img src="../Imagens/cat shop logo.png" alt="Logo Catshop"></a>
-                <p>Tudo para seu Miaumigo</p>
-
-                <div id="footer_social_media">
-                    <a href="https://www.instagram.com/cathshop.pgua/" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <a href="../index.html"><img src="../Imagens/cat shop logo.png" alt="Logo Catshop"></a>
+                    <p>Tudo para seu Miaumigo</p>
+    
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/cathshop.pgua/" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+    
+                    <div id="footer_social_media">
+                        <a href="https://x.com/catshoppgua?t=HPYAbvkN7O8WhKtvEstCjg&s=09" class="footer-link" id="x-twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
                 </div>
-
-                <div id="footer_social_media">
-                    <a href="https://x.com/catshoppgua?t=HPYAbvkN7O8WhKtvEstCjg&s=09" class="footer-link" id="x-twitter">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3 class="footer-title">Sobre Nós</h3>
+                        <a href="../Sobre.html" class="footer-link">Quem Somos</a>
+                        <a href="../Contato.html" class="footer-link">Contato</a>
+                    </li>
+                    <li>
+                        <h3 class="footer-title">Serviços</h3>
+                        <a href="../Castração, veterinário e banho/Castração.html" class="footer-link">Castração</a>
+                        <a href="../Castração, veterinário e banho/banho.html" class="footer-link">Banho</a>
+                        <a href="../Castração, veterinário e banho/vet.html" class="footer-link">Veterinário</a>
+                    </li>
+                    <li>
+                        <h3 class="footer-title">Adoção</h3>
+                        <a href="../Inicial/adocao.html" class="footer-link">Animais para Adoção</a>
+                    </li>
+                </ul>
             </div>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>INSTITUCIONAL</h3>
-                </li>
-                <li>
-                    <a href="../Página Quem somos/Quem somos.html" class="footer-link">Quem somos</a>
-                </li>
-                <li>
-                    <a href="../Forma da pagamento/Pagamento.html" class="footer-link">Forma de pagamento</a>
-                </li>
-                <li>
-                    <a href="../Devolução e reembolso/DeR.html" class="footer-link">Política de devolução e reembolso</a>
-                </li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>ATENDIMENTO</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">(41) 98563-4521</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">atendimento.catshop@gmail.com</a>
-                </li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>LOCALIZAÇÃO</h3>
-                </li>
-                <li>
-                    <p>Catshop Online Ltda ME</p>
-                    <p>Rua Alameda Cel. Elizio Pereira</p>
-                    <p>83206-000</p>
-                    <p>Paranaguá-PR</p>
-                </li>
-            </ul>
-
-
-        </div>
-
-        <div id="footer_copyright">
-            &#169
-            Criado por Aline, Lucas, Ayume e Hugo
-        </div>
-
-    </footer>
-
-</body>
-</html>
+    
+            <div id="footer_bottom">
+                <p>&copy; 2023 CatShop. Todos os direitos reservados.</p>
+            </div>
+            
+        </footer>
+    
+        <script>
+            function logar() {
+                var login = document.getElementById('loginEmail').value; // Mudado para 'loginEmail'
+                var senha = document.getElementById('senha').value;
+    
+                if (login === "admin@gmail.com" && senha === "admin") {
+                    alert('Sucesso');
+                    location.href = "adocao.html"; // Redireciona para a página inicial
+                } else {
+                    alert('Usuário ou senha incorretos');
+                }
+            }
+        </script>
+    
+    </body>
+    </html>
